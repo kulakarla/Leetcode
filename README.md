@@ -5,6 +5,6 @@ Repository where I will be commiting my solutions to various Leetcode problems. 
 ## Currently completed
 
 
-* 1. Two Sum
-* 217. Contains Duplicates
-* 242. Valid Anagram
+* 1 Two Sum
+* 217 Contains Duplicates
+* 242 Valid Anagram
