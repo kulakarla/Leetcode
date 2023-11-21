@@ -29,8 +29,8 @@ bool isAnagram(string s, string t) {
             mem1[int(s[i]) - 97] += 1;
             mem1[int(t[i]) - 97] -= 1;
 
-        }
 
+        }
         for(int j = 0; j < size(mem1); j++){
             if ( mem1[j] != 0){
                 return false;
