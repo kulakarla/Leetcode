@@ -56,14 +56,18 @@ vector<vector<string>> groupAnagrams(vector<string>& strs){
         currentWordAnagrams.push_back(currentWord);
         strs.pop_back();
 
-        for(int i = 0; i < strs.size(); i++){
+        
+        int i = 0;
+        while(i < strs.size()){
             if(strs[i].length() != currentWord.length()){
+                i++;
                 continue;
             }else{
                 if(isAnagram(currentWord, strs[i])){
                     currentWordAnagrams.push_back(strs[i]);
                     strs.erase(strs.begin() + i);
-
+                }else{
+                    i++;
                 }
             }
         }
